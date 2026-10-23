@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>joshua computer solutions</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+body{background:#eef2ff}
+.top{background:linear-gradient(135deg,#6a11cb,#2575fc);color:white;padding:40px 20px 70px 20px;text-align:center;border-radius:0 0 30px 30px}
+.top h1{font-size:30px}
+.white{background:white;margin:-40px 12px 15px 12px;padding:20px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+h2{color:#6a11cb;margin-bottom:10px}
+.btn{background:#6a11cb;color:white;padding:12px 20px;border-radius:25px;text-decoration:none;display:inline-block;margin-top:10px;font-weight:bold}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.item{background:white;padding:18px;border-radius:15px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,.05)}
+.price{background:white;border:2px solid #6a11cb;padding:15px;border-radius:15px;text-align:center}
+input,textarea{width:100%;padding:12px;margin-top:8px;border:1px solid #ddd;border-radius:10px}
+.send{background:#25D366;color:white;border:none;padding:14px;width:100%;border-radius:12px;font-weight:bold;margin-top:10px;font-size:16px}
+.nav{position:fixed;bottom:0;left:0;right:0;background:white;display:flex;justify-content:space-around;padding:12px;box-shadow:0 -5px 15px rgba(0,0,0,.1)}
+.nav a{text-decoration:none;color:gray;font-size:12px;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="top">
+<h1>JOSH TECHNOLOGIES UGANDA</h1>
+<p>Student - UCU Mbale</p>
+<p>Python | Web Design | Business</p>
+<a class="btn" href="https://wa.me/256787452507">Chat on WhatsApp</a>
+</div>
+|
+<div class="white">
+<h2>About Me</h2>
+<p>SKILLED for WORK AND EXPERIENCE. I make websites and systems and design . I help shops and schools to go online.</p>
+<p style="margin=-top:10px"><b>phone:</b> +256 731772010<br><b>Email:</b> muwanguzijoshua22022@gmail.com<br><b>Location:</b> Mbale city reach me out online, Uganda</p>
+</div>
+
+<div class="white">
+<h2>My Skills</h2>
+<div class="grid">
+<div class="item">💻<br><b>Web Design</b></div>
+<div class="item">🐍<br><b>Python</b></div>
+<div class="item">🎨<br><b>Graphics</b></div>
+<div class="item">📱<br><b>Phone Coding</b></div>
+</div>
+</div>
+
+<div class="white" style="background:linear-gradient(135deg,#ff9a00,#ff6a00);color:white">
+<h2 style="color:white">My Business</h2>
+<p>I make websites that appear on Google</p>
+<div class="grid" style="margin-top:15px">
+<div class="price"><b style="color:#ff6a00;font-size:20px">100k</b><br>Personal</div>
+<div class="price"><b style="color:#ff6a00;font-size:20px">150k</b><br>Business</div>
+<div class="price"><b style="color:#ff6a00;font-size:20px">250k</b><br>Shop</div>
+</div>
+</div>
+
+<div class="white">
+<h2>Contact Me</h2>
+<input id="name" placeholder="Your Name">
+<input id="phone" placeholder="Your Phone Number">
+<textarea id="msg" placeholder="how can i help you..."></textarea>
+<button class="send" onclick="go()">Send on WhatsApp 07874525830</button>
+</div>
+
+<br><br><br>
+
+<div class="nav">
+<a href="#">🏠<br>Home</a>
+<a href="#">👤<br>About</a>
+<a href="#">💼<br>Biz</a>
+<a href="#">📩<br>Contact</a>
+</div>
+<script>
+function go(){
+var n=document.getElementById('name').value;
+var p=document.getElementById('phone').value;
+var m=document.getElementById('msg').value;
+var text="hello JOSHUA: "+n+"APhone: "+p+"Message: "+m;
+window.open("https://wa.me/256787452507?text="+text);
+}
+</script>
+</body>
+</html>
